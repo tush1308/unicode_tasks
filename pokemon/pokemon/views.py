@@ -15,16 +15,6 @@ def index(request):
             
             for i in range(l):
                 lst.append(a[i]["name"])
-                # #bonus
-                # resource_url=a[i]["url"]
-                # url1=resource_url
-                # response = requests.get(url1)
-                # if response.status_code==200:
-                #     newdata=json.loads(response.text)
-                #     typ=newdata["types"][0]["type"]["name"]
-                #     print("Pokemon Type=",typ)
-
-                # else: print("Error occured")
             return [lst]
 
 
