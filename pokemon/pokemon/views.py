@@ -12,7 +12,7 @@ def index(request):
             a=data['results']
             l=len(a)
             lst=[]
-            dict1={}
+            
             for i in range(l):
                 lst.append(a[i]["name"])
                 # #bonus
@@ -23,7 +23,6 @@ def index(request):
                 #     newdata=json.loads(response.text)
                 #     typ=newdata["types"][0]["type"]["name"]
                 #     print("Pokemon Type=",typ)
-                #     dict1(a[i]["name"],newdata["types"][0]["type"]["name"])
 
                 # else: print("Error occured")
             return [lst]
